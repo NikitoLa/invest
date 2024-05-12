@@ -1,0 +1,141 @@
+body {
+    background: linear-gradient(90deg, #cfecd0, #ffc5ca);
+    /*background: linear-gradient(to right, #9fdef5, #52c7f2, #19edfc);
+    background-color: #a4cbee;
+    */
+    
+}
+
+header {
+    /**/border: 1px solid black;
+    margin: 10px;
+    height: 100px;
+}
+
+main {
+    /**/border: 1px solid black;
+    margin: 10px;
+    min-height: 300px;
+}
+
+footer {
+    /**/border: 1px solid black;
+    margin: 10px;
+    height: 100px;
+}
+
+
+/*прописываем чтобы размеры задавались от значения блока с контентом*/
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align:center;
+    align-content: center;
+    margin: 0;
+}
+
+p {
+    text-align:justify;
+    align-content: center;
+    margin: 0;
+}
+
+span {
+    
+    align-content: center;
+
+    /*border: 2px solid black;*/
+    height: 30px;
+    width: 170px;
+}
+
+.results {
+    display: block;
+    margin: 10px auto;
+    align-content: center;
+    width: 400px;
+
+    /**/border: 2px solid black;
+    height: 50px;
+}
+
+.window-with-info-about-page {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 0.5cm;
+    margin: 20px auto;
+
+    min-height: 200px;
+    width: 500px;
+
+}
+
+.info-on-the-page {
+    /**/border: 1px solid black;
+    border-radius: 0.1cm;
+    margin: 10px auto;
+
+    min-height: 50px;
+    width: 95%;
+}
+
+.complection-form {
+    display: flex;
+    justify-content:space-between;
+
+    margin: 10px 70px 10px 70px;
+}
+
+.question-conclusion {
+    /**/border: 1px solid black;
+    margin: 10px;
+
+    min-height: 100px;
+}
+.clarification-output {
+    /**/border: 1px solid black;
+    margin: 10px;
+
+    min-height: 50px;
+}
+
+.inputs {
+    height: 30px;
+}
+
+.input-value {
+    display: block;
+    margin: 10px auto;
+
+    text-align:center;
+    align-content: center;
+
+    height: 50px;
+    width: 50%;
+}
+
+.buttons {
+    display: block;
+    font-size: 15px;
+    
+    /*
+    background-color: rgb(134, 6, 167);
+    color: white;
+    border: 1px solid black;
+    border-radius: 0.1cm;
+   */
+
+    margin: 10px auto;
+
+    height: 50px;
+    width: 95%;
+}
+
+.broken-buttons{
+    background-color: rgba(196, 196, 196, 0.942);
+}
+
