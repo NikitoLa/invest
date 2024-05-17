@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestApp</title>
+    <link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Красивая шапка приложения</h1>
+    </header>
+
+    <main>
+        <!---->
+        <div id="page1-2" class="window-with-info-about-page">
+            <h2 class="info-on-the-page">Войти</h2>
+
+            <form method="" action="/page2-Menu.html"> <!--вставил переход напрямую пока, по хорошему сервер должен отработать запрос и при успехе зайти в меню-->
+
+                <section>
+                    <input type="text" placeholder="Почта: ivanov@mail.ru">
+                    <input type="text" placeholder="Пароль:">
+                </section>
+                
+                <button class="buttons" id="log-in" type="submit">Войти</button>
+            </form>
+            
+            <button class="buttons" onclick="document.location='/page0-Start.html'" id="backToStart">Назад</button>
+
+            <p>
+                Еще не зарегистрированны? <br>
+                Можете <button onclick="document.location='/page1-1-LogUp.html'" id="log-up">Зарегистрироваться</button> 
+                <!--<a href="">Зарегистрироваться</a>-->
+            </p>
+        </div>
+        <!---->
+    </main>
+
+    <footer>
+        <h2>Красивый футер приложения</h2>
+    </footer>
+    
+    <!-- <script src="./app.js"></script> -->
+</body>
+</html>
