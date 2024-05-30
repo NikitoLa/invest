@@ -259,7 +259,11 @@ function showPage2Menu(){
     });
 
     //если нажали на "Бумаги прошедшие опрос"
-    
+    const papersThatPassedSurvey = document.getElementById('papers-that-passed-survey');
+    papersThatPassedSurvey.addEventListener('click', function() {
+        document.location='./page7-Assets.html';
+    });
+
     //если нажали на "вопросы"
     const databaseQuestions = document.getElementById('database-of-questions');
     databaseQuestions.addEventListener('click', function() {

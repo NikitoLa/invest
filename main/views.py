@@ -30,15 +30,6 @@ def Indicat(request):
     }
     return render(request, 'main/page8-Questions.html', context)
 
-
-def about(request):
-    context = {
-        'title': 'Home',
-        'content': 'О нас - Invest',
-        'text_on_page': "Текс почему этот сайт такой классный"
-    }
-    return render(request, 'main/about.html', context)
-
 def Asse(request):
     assets = Assets.objects.all()
 
@@ -47,4 +38,13 @@ def Asse(request):
         'content': 'Бумаги',
         'assets': assets,
     }
-    return render(request, 'main/page-Assets.html', context)
+    return render(request, 'main/page7-Assets.html', context)
+
+
+def about(request):
+    context = {
+        'title': 'Home',
+        'content': 'О нас - Invest',
+        'text_on_page': "Текс почему этот сайт такой классный"
+    }
+    return render(request, 'main/about.html', context)
