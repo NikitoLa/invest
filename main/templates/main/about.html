@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestApp</title>
+    <link rel="stylesheet" href="{% static "deps/css/app.css" %}">
+
+</head>
+<body>
+
+    <header>
+        <h1>InvestApp</h1>
+    </header>
+
+    <main>
+        <!---->
+
+        <div id="about", class="page-with-about">
+            <p>{{text_on_page}}</p>
+        </div>
+       
+        
+    </main>
+    <footer>
+        <section>
+            <ul>
+                <li>Тел: +7(999)-999-99-99</li>
+                <li>Почта: ivanov@mail.ru</li>
+            </ul>
+        </section>
+    </footer>
+    
+    {% comment "" %}<script src="{% static "deps/js/app.js" %}"></script>{% endcomment %}
+</body>
+</html>

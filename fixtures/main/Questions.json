@@ -1,0 +1,106 @@
+[
+    {
+        "model": "main.questions",
+        "pk": 1,
+        "fields": {
+            "question": "Сколько лет компании?",
+            "target_score": 15
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 2,
+        "fields": {
+            "question": "Отношение долга компании к ее капиталу '(D/E)'",
+            "target_score": 9
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 3,
+        "fields": {
+            "question": "Чистая прибыль на 1 акцию '(EPS)'",
+            "target_score": 8
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 4,
+        "fields": {
+            "question": "Переоценка акций '(P/E)'",
+            "target_score": 11
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 5,
+        "fields": {
+            "question": "Отношение капитализации к собственному капиталу '(P/BV)'",
+            "target_score": 17
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 6,
+        "fields": {
+            "question": "Отношение капиталищации к общей выручке'(P/S)'",
+            "target_score": 1
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 7,
+        "fields": {
+            "question": "Отношение стоимости компании к прибыли'(EV/EBITDA)'",
+            "target_score": 5
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 8,
+        "fields": {
+            "question": "Чистая прибыль к собственному капиталу'(ROE)'",
+            "target_score": 15
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 9,
+        "fields": {
+            "question": "Чистая прибыль к средней стоимости активов'(ROA)'",
+            "target_score": 9
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 10,
+        "fields": {
+            "question": "Абсолютная разница ROE и ROA",
+            "target_score": 7
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 11,
+        "fields": {
+            "question": "Валовая прибыль к выручке 'gross margin'",
+            "target_score": 19
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 12,
+        "fields": {
+            "question": "Чистая стоимость активов компании'(NCAV)'",
+            "target_score": 45
+        }
+    },
+    {
+        "model": "main.questions",
+        "pk": 13,
+        "fields": {
+            "question": "Изменение цены акции за последний год'(%)'",
+            "target_score": 21
+        }
+    }
+]

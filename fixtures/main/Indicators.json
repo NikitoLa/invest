@@ -1,0 +1,86 @@
+[
+    {
+        "model": "main.indicators",
+        "pk": 1,
+        "fields": {
+            "question": "Какой долг компании?"
+        }
+    },
+    {
+        "model": "main.indicators",
+        "pk": 2,
+        "fields": {
+            "question": "Какой собственный капитал компании?"
+        }
+    },
+    {
+        "model": "main.indicators",
+        "pk": 3,
+        "fields": {
+            "question": "Цена акции?"
+        }
+    },
+    {
+        "model": "main.indicators",
+        "pk": 4,
+        "fields": {
+            "question": "Количество акций компании?"
+        }
+    },
+    {
+        "model": "main.indicators",
+        "pk": 5,
+        "fields": {
+            "question": "Капитализация компании?"
+        }
+    },
+    {
+        "model": "main.indicators",
+        "pk": 6,
+        "fields": {
+            "question": "Прибыль EBITDA?"
+        }
+    },
+    {
+        "model": "main.indicators",
+        "pk": 7,
+        "fields": {
+            "question": "Чистая прибыль?"
+        }
+    },
+    {
+        "model": "main.indicators",
+        "pk": 8,
+        "fields": {
+            "question": "Какая выручка?"
+        }
+    },
+    {
+        "model": "main.indicators",
+        "pk": 9,
+        "fields": {
+            "question": "Стоимость компании EV?"
+        }
+    },
+    {
+        "model": "main.indicators",
+        "pk": 10,
+        "fields": {
+            "question": "Средняя стоимость активов?"
+        }
+    },
+    {
+        "model": "main.indicators",
+        "pk": 11,
+        "fields": {
+            "question": "Чистая рентабельность?"
+        }
+    },
+    {
+        "model": "main.indicators",
+        "pk": 12,
+        "fields": {
+            "question": "Себестоимость продукции?"
+        }
+    }
+]

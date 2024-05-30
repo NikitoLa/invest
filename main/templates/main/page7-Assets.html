@@ -1,0 +1,80 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestApp</title>
+    <link rel="stylesheet" href={% static "deps/css/app.css" %}>
+
+</head>
+<body>
+
+    <header>
+        <h1>InvestApp</h1>
+    </header>
+
+    <main>
+        <!---->
+        <div id="page7" class="window-with-info-about-page">
+
+            <h2 class="info-on-the-page">Бумаги прошедшие опрос</h2>
+
+            <section>
+                <table>
+                    <tr>
+                        <th>{{content}}</th>
+                        <th>Возраст компании</th>
+                        <th>Отношение долга компании к ее капиталу (D/E)</th>
+                        <th>Чистая прибыль на 1 акцию (EPS)</th>
+                        <th>Переоценка акций (P/E)</th>
+                        <th>Отношение капитализации к собственному капиталу (P/BV)</th>
+                        <th>Отношение капиталищации к общей выручке(P/S)</th>
+                        <th>Отношение стоимости компании к прибыли (EV/EBITDA)</th>
+                        <th>Чистая прибыль к собственному капиталу (ROE)</th>
+                        <th>Чистая прибыль к средней стоимости активов (ROA)</th>
+                        <th>Абсолютная разница ROE и ROA</th>
+                        <th>Валовая прибыль к выручке gross margin</th>
+                        <th>Чистая стоимость активов компании (NCAV)</th>
+                        <th>Изменение цены акции за последний год (%)</th>
+                    </tr>
+                    {% for asset in assets %}
+                        <tr>
+                            <!--цикл с выводом инфы из табл БД-->
+                            <td>{{asset.asset}}</td>
+                            <td>{{asset.age}}</td>
+                            <td>{{asset.d_div_e}}</td>
+                            <td>{{asset.eps}}</td>
+                            <td>{{asset.p_div_e}}</td>
+                            <td>{{asset.p_div_bv}}</td>
+                            <td>{{asset.p_div_s}}</td>
+                            <td>{{asset.ev_div_ebitda}}</td>
+                            <td>{{asset.roe}}</td>
+                            <td>{{asset.roa}}</td>
+                            <td>{{asset.roe_min_roa_abs}}</td>
+                            <td>{{asset.gross_margin}}</td>
+                            <td>{{asset.ncav}}</td>
+                            <td>{{asset.asset_diff}}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </section>
+
+            <button class="buttons" onclick="document.location='../" id="back-in-menu">Назад</button>
+        </div>
+        <!---->
+    </main>
+
+    <footer>
+        <section>
+            <ul>
+                <li>Тел: +7(999)-999-99-99</li>
+                <li>Почта: ivanov@mail.ru</li>
+            </ul>
+        </section>
+    </footer>
+    
+    <!-- <script src="./app.js"></script> -->
+</body>
+</html>

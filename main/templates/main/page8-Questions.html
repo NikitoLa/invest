@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestApp</title>
+    <link rel="stylesheet" href={% static "deps/css/app.css" %}>
+
+
+</head>
+<body>
+
+    <header>
+        <h1>InvestApp</h1>
+    </header>
+
+    <main>
+        <!---->
+        <div id="page8" class="window-with-info-about-page">
+
+            <h2 class="info-on-the-page">{{content}}</h2>
+
+            <section>
+                <ul>
+                    {% for indicator in indicators %}
+                        <li>{{indicator.question}}</li>
+                    {% endfor %}
+                    
+                </ul>
+            </section>
+
+            <button class="buttons" onclick="document.location='../'" id="back-in-menu">Назад</button>
+        </div>
+        <!---->
+    </main>
+
+    <footer>
+        <section>
+            <ul>
+                <li>Тел: +7(999)-999-99-99</li>
+                <li>Почта: ivanov@mail.ru</li>
+            </ul>
+        </section>
+    </footer>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
