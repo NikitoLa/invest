@@ -1,0 +1,100 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestApp</title>
+    <link rel="stylesheet" href="{% static "deps/css/app.css" %}">
+
+</head>
+<body>
+
+    <header>
+        <h1>InvestApp</h1>
+    </header>
+
+    <main>
+        <!---->
+        <div id="page1-1" class="window-with-info-about-page">
+            <h2 class="info-on-the-page">Регистрация</h2>
+
+            <form method="post" action="{% url "main:Logup" %}">
+                {% csrf_token %}
+                <section>
+                    <div>
+                        <input class="form-control" type="text"     for="id_first_name" id="id_first_name" value="{% if form.first_name.value %}{{form.first_name.value}}{% endif %}" name="first_name" placeholder="Введите имя">
+                        {% if form.first_name.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form.first_name.errors}}</div>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <input class="form-control" type="text"     for="id_last_name"  id="id_last_name"  value="{% if form.last_name.value %}{{form.last_name.value}}{% endif %}"   name="last_name"  placeholder="Введите фамилию">
+                        {% if form.last_name.errors.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form.last_name.errors}}</div>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <input class="form-control" type="text"     for="id_patronymic" id="id_patronymic" value="{% if form.patronymic.value %}{{form.patronymic.value}}{% endif %}" name="patronymic" placeholder="Введите отчество">
+                        {% if form.patronymic.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form.patronymic.errors}}</div>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <input class="form-control" type="text"     for="id_username"   id="id_username"   value="{% if form.username.value %}{{form.username.value}}{% endif %}"     name="username"   placeholder="Введите имя пользователя">
+                        {% if form.username.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form.username.errors}}</div>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <input class="form-control" type="email"    for="id_email"      id="id_email"      value="{% if form.email.value %}{{form.email.value}}{% endif %}"           name="email"      placeholder="Введите почту">
+                        {% if form.email.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form.email.errors}}</div>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <input class="form-control" type="password" for="id_password1"  id="id_password1"  value="{% if form.password1.value %}{{form.password1.value}}{% endif %}"   name="password1"  placeholder="Введите пароль">
+                        {% if form.password1.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form.password1.errors}}</div>
+                        {% endif %}
+                    </div>
+
+                    <div>
+                        <input class="form-control" type="password" for="id_password2"  id="id_password2"  value="{% if form.password2.value %}{{form.password2.value}}{% endif %}"   name="password2"  placeholder="Подтвердите пароль">
+                        {% if form.password2.errors %}
+                        <div class="alert alert-danger alert-dismissible fade show">{{form.password2.errors}}</div>
+                        {% endif %}
+                    </div>
+
+                </section>
+
+                <button class="buttons" id="log-up" type="submit">Регистрация</button>
+            </form>
+
+            <p>
+                Уже зарегистрированны? <br>
+                Можете <button onclick="document.location='/page1-2-LogIn.html'" id="log-in">Войти</button>
+                <!--<a href="">ВОЙТИ</a>-->
+            </p>
+        </div>
+        <!---->
+    </main>
+
+    <footer>
+        <section>
+            <ul>
+                <li>Тел: +7(999)-999-99-99</li>
+                <li>Почта: ivanov@mail.ru</li>
+            </ul>
+        </section>
+    </footer>
+    
+    <!-- <script src="./app.js"></script> -->
+</body>
+</html>

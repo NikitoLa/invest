@@ -281,8 +281,9 @@ function showPage2Menu(){
     //если нажали на "Выйти из приложения"
     const backToStart = document.getElementById('backToStart');
     backToStart.addEventListener('click', function() {
-        clearPage();
-        showPageLogUp();
+        // clearPage();
+        // showPageLogUp();
+        document.location = '../';
     });
 }
 

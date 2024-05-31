@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InvestApp</title>
+    <link rel="stylesheet" href="{% static "deps/css/app.css" %}">
+
+</head>
+<body>
+
+    <header>
+        <h1>InvestApp</h1>
+    </header>
+
+    <main>
+        <!---->
+        <div id="page1-2" class="window-with-info-about-page">
+            <h2 class="info-on-the-page">Войти</h2>
+
+            <form method="post" action="{% url "main:Login" %}"> <!--вставил переход напрямую пока, по хорошему сервер должен отработать запрос и при успехе зайти в меню-->
+                {% csrf_token %}
+
+                {% comment %} При таком подходе пароль не скрывается {% endcomment %}
+                {% if form.non_field_errors %}
+                    <p>{{form.non_field_errors}}</p>
+                {% endif %}
+                <section>
+                    <input type="text" class="form-control" value="{% if form.username.value %}{{ form.username.value }}{% endif %}" id="id_username" name="username" placeholder="Введите имя пользователя">
+                    <input type="password" class="form-control" id="id_password" name="password" placeholder="Введите пароль:">
+                </section> 
+
+                {% comment %} при таком подходе пароль скрывается {% endcomment %}
+                {% comment %} <section>
+                   {{form.username}}
+                   {{form.password}}
+                </section>  {% endcomment %}
+
+                <button class="buttons" id="log-in" type="submit">Войти</button>
+            </form>
+
+            <p>
+                Еще не зарегистрированны? <br>
+                Можете <button onclick="document.location='../'">Зарегистрироваться</button> 
+                <!--<a href="">Зарегистрироваться</a>-->
+            </p>
+        </div>
+        <!---->
+    </main>
+
+    <footer>
+        <section>
+            <ul>
+                <li>Тел: +7(999)-999-99-99</li>
+                <li>Почта: ivanov@mail.ru</li>
+            </ul>
+        </section>
+    </footer>
+    
+    <!-- <script src="./app.js"></script> -->
+</body>
+</html>

@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
 
 class Indicators(models.Model):
@@ -64,3 +65,15 @@ class Assets(models.Model):
 
     def __str__(self):
         return self.asset
+
+
+class User(AbstractUser):
+    patronymic = models.CharField(max_length=300, verbose_name="Отчество")
+
+    class Meta:
+        db_table = "user"
+        verbose_name = "Пользователя"
+        verbose_name_plural = "Пользователи"
+
+    def __str__(self):
+        return self.username
