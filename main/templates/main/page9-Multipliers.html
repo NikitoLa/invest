@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InvestApp</title>
-    <link rel="stylesheet" href={% static "deps/css/app.css" %}>
-
+    <link rel="stylesheet" href={% static "deps/css/styleForMultipliers.css" %}>
 
 </head>
 <body>
@@ -25,18 +24,18 @@
             <section>
                 <table>
                     <tr>
-                        <th>Вопрос</th>
+                        <th>Мультипликатор</th>
                         <th>Эталонное значение</th>
                     </tr>
                     {% for question in questions %}
                         <tr>
                             <td><span>{{question.question}}</span></td>
-                            <td><span>{{question.target_score}}</span></td>
-                            <td><span></span></td>
+                            <td> <input type="text" placeholder="{{question.target_score}}"> </td>
+                            <td> <button>Изменить</button> </td>
                         </tr>
                     {% endfor %}
                     
-                  </table>
+                </table>
             </section>
 
             <button class="buttons" onclick="document.location='../index.html'" id="back-in-menu">Назад</button>

@@ -50,6 +50,9 @@ table {
     font-size: 13px;
     margin: 0px auto;
 
+    align-content: center;
+    text-align:center;
+
 }
 
 .window-with-info-about-page {
@@ -58,10 +61,10 @@ table {
     
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    margin: 5px auto;
+    /* margin: 5px auto; */
     
     min-height: 200px;
-    width: 400px;
+    /* width: auto; */
 }
 
 .info-on-the-page {
@@ -160,7 +163,7 @@ button {
     margin: 10px auto;
     padding: 0px;
     */
-    width: 80%;
+    width: 25%;
     height: 50px;
     
     font-size: 20px;
