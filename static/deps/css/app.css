@@ -189,3 +189,9 @@ button:hover {
 
     pointer-events: none;
 }
+
+table {
+    font-size: 20px;
+
+    align-content: center;
+}

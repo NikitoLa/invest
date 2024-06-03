@@ -2,45 +2,25 @@
 //вытягивание данных
 //заполнение массива данными из БД
 
-const users = [
-    {
-        userSurname:"иванов0",
-        userName:"иван0",
-        userPatronymi:"иванович0",
-        userEmail:"почта0",
-        userPassword:"123"
-    },
-    {
-        userSurname:"иванов1",
-        userName:"иван1",
-        userPatronymi:"иванович1",
-        userEmail:"почта1",
-        userPassword:"123"
-    }
-];
-
-console.log(users);
-
-//тестовый массив
 const questions = [
 	{
-		question: "Вопрос 1?",
-        explanation: "Пояснение 1",		
+		question: "Какой долг компании??",
+        explanation: "Это все финансовые обязательства, которые организация взяла на себя, но не смогла выполнить",		
 		correct: [10], // значение корректное для вопроса
 	},
 	{
-		question: "Вопрос 2?",
-        explanation: "Пояснение 2",	
+		question: "Какой собственный капитал компании?",
+        explanation: "Это разница между активами и обязательствами организации",	
 		correct: [10],
 	},
 	{
-		question: "Вопрос 3?",
-        explanation: "Пояснение 3",	
+		question: "Цена акции?",
+        explanation: "Текущая рыночная стоимость актива",	
 		correct: [10],
 	},
 	{
-		question: "Вопрос 4?",
-        explanation: "Пояснение 4",	
+		question: "Количество акций компании?",
+        explanation: "Все акции компании в обращении на рынке",	
 		correct: [10],
 	},
 ];
