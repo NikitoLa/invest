@@ -1,0 +1,194 @@
+header {
+    /*border: 1px solid black;*/
+    background-color: rgb(42, 46, 110);
+    color: white;
+    
+    min-height: 10vh;
+    align-content: center;
+}
+
+main {
+    /*border: 1px solid black;*/
+    align-content: center;
+    background-color: rgb(229, 243, 246);
+    min-height: 80vh;
+}
+
+footer {
+    /*border: 1px solid black;*/
+    background-color: rgb(42, 46, 110);
+    color: white;
+    
+    min-height: 10vh;
+    align-content: center;
+}
+
+/*прописываем чтобы размеры задавались от значения блока с контентом*/
+*,
+*:after,
+*:before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align:center;
+}
+
+p {
+    /*border: 1px solid black;*/
+    text-align:center;
+    margin: 5px;
+}
+
+span {
+    align-content: center;
+}
+
+table {
+    font-size: 13px;
+    margin: 0px auto;
+
+    align-content: center;
+    text-align:center;
+
+}
+
+.window-with-info-about-page {
+    border: 2px solid rgb(210, 230, 235);
+    background-color: rgb(210, 230, 235);
+    
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    /* margin: 5px auto; */
+    
+    min-height: 200px;
+    /* width: auto; */
+}
+
+.info-on-the-page {
+    /*border: 1px solid black;*/
+    border-radius: 0.1cm;
+    margin: 10px auto;
+
+    min-height: 50px;
+    width: 100%;
+
+    color: rgb(133, 136, 241);
+
+    font-size: 50px;
+
+    text-transform: uppercase;
+}
+
+.question-conclusion {
+    /**/border: 1px solid black;
+    margin: 10px;
+
+    min-height: 100px;
+
+    color: rgb(133, 136, 241);
+    text-align:justify;
+    align-content: center;
+    font-size: 25px;
+}
+.clarification-output {
+    /**/border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+
+    min-height: 50px;
+
+    color: rgb(133, 136, 241);
+    text-align:justify;
+    align-content: center;
+    font-size: 20px;
+}
+
+.results {
+    display: block;
+    margin: 10px auto;
+    align-content: center;
+    width: 90%;
+
+    /**/border: 2px solid black;
+    min-height: 50px;
+
+    font-size: 20px;
+}
+
+input {
+    display: block;
+    align-content: center;
+
+    border-color: #eee;
+    border: none;
+    margin: 10px auto;
+    padding: 10px 15px;
+    
+    font-size: 15px;
+    border-radius: 10px;
+    width: 80%;
+    outline: none;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.input-value {
+    align-content: center;
+    text-align:center;
+
+    width: 50%;
+}
+
+button {
+    background-color: rgb(42, 46, 110);
+    color: white;
+
+    border-style: none;
+    border-radius: 0.25cm;
+    margin: 10px auto;
+    padding: 5px;
+    
+}
+
+.buttons {
+    display: block;
+    /*
+    background-color: rgb(42, 46, 110);
+    color: white;
+    border-style: none;
+    border-radius: 0.25cm;
+    margin: 10px auto;
+    padding: 0px;
+    */
+    width: 25%;
+    height: 50px;
+    
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: rgb(100, 142, 225);
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: rgb(100, 142, 225);
+    cursor: pointer;
+}
+
+.broken-buttons {
+    display: block;
+    color: black;
+    height: 50px;
+    width: 80%;
+
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: rgba(196, 196, 196, 0.942);
+
+    pointer-events: none;
+}
