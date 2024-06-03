@@ -8,7 +8,6 @@
     <title>InvestApp</title>
     <link rel="stylesheet" href={% static "deps/css/app.css" %}>
 
-
 </head>
 <body>
 
@@ -23,10 +22,14 @@
             <h2 class="info-on-the-page">{{content}}</h2>
 
             <section>
-                <ul>
+                <table>
                     {% for indicator in indicators %}
-                        <li>{{indicator.question}}</li>
+                    <tr>
+                        {{indicator.question}}                    
+                    </tr>
                     {% endfor %}
+                </table>
+                <ul>
                     
                 </ul>
             </section>
