@@ -50,6 +50,9 @@ table {
     font-size: 13px;
     margin: 0px auto;
 
+    align-content: center;
+    text-align:center;
+
 }
 
 .window-with-info-about-page {
@@ -58,10 +61,10 @@ table {
     
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    margin: 5px auto;
+    /* margin: 5px auto; */
     
     min-height: 200px;
-    width: 400px;
+    /* width: auto; */
 }
 
 .info-on-the-page {
@@ -109,30 +112,13 @@ table {
     align-content: center;
     width: 90%;
 
-    border: 2px solid black;
+    /**/border: 2px solid black;
     min-height: 50px;
 
     font-size: 20px;
 }
 
 input {
-    display: block;
-    align-content: center;
-
-    border-color: #eee;
-    border: none;
-    margin: 10px auto;
-    padding: 10px 15px;
-    
-    font-size: 15px;
-    border-radius: 10px;
-    width: 80%;
-    outline: none;
-
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-}
-
-select {
     display: block;
     align-content: center;
 
@@ -177,7 +163,7 @@ button {
     margin: 10px auto;
     padding: 0px;
     */
-    width: 80%;
+    width: 25%;
     height: 50px;
     
     font-size: 20px;
@@ -205,10 +191,4 @@ button:hover {
     background-color: rgba(196, 196, 196, 0.942);
 
     pointer-events: none;
-}
-
-table {
-    font-size: 20px;
-
-    align-content: center;
 }
