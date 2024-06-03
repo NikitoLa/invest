@@ -109,13 +109,30 @@ table {
     align-content: center;
     width: 90%;
 
-    /**/border: 2px solid black;
+    border: 2px solid black;
     min-height: 50px;
 
     font-size: 20px;
 }
 
 input {
+    display: block;
+    align-content: center;
+
+    border-color: #eee;
+    border: none;
+    margin: 10px auto;
+    padding: 10px 15px;
+    
+    font-size: 15px;
+    border-radius: 10px;
+    width: 80%;
+    outline: none;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+select {
     display: block;
     align-content: center;
 

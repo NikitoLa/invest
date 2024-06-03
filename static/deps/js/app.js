@@ -52,7 +52,7 @@ const mainContainer = document.querySelector('main');
 showPage2Menu();
 //showPage3ChoosIndustry();
 //showPage4FillOutTheForm();
-//showPage5OutputQuestion();
+showPage5OutputQuestion();
 //showPage6Results();
 
 //определение функций
@@ -303,8 +303,11 @@ function showPage4FillOutTheForm(){
     <div id="page4" class="window-with-info-about-page">
         <h2 class="info-on-the-page">ФОРМА</h2>
         <input type="text" id="nameCompany" placeholder="Название компании">
-        <input type="text" id="securitiesKind" placeholder="акция/облигация">
-        <input type="text" id="securitiesCoast" placeholder="Стоимость $">
+        <select id="securitiesKind">
+            <option>акция</option>
+            <option>облигация</option>
+        </select>
+        <input type="number" id="securitiesCoast" placeholder="Стоимость $">
         <button class="buttons" id="the-survey">Перейти к опросу</button>
         <button class="buttons" id="back-in-choos-industry">Назад</button>
     </div>
@@ -320,9 +323,9 @@ function showPage4FillOutTheForm(){
         securitiesCoast = document.getElementById('securitiesCoast').value;
 
         //проверка заполенны ли все поля
-        let checkValues = (nameCompany.length > 0) 
-                            && (securitiesKind.length > 0) 
+        let checkValues = (nameCompany.length > 0)  
                             && (securitiesCoast.length > 0)
+
         if(checkValues){
             clearPage();
             showPage5OutputQuestion();
@@ -352,7 +355,7 @@ function showPage5OutputQuestion(){
             %explanation%
         </section>   
         
-        <input type="text" class="input-value" id="valueId" placeholder="значение">
+        <input type="number" class="input-value" id="valueId" placeholder="значение">
         <button class="buttons" id="toAnswer">Ответить</button>
     </div>
     `;
