@@ -49,10 +49,10 @@ const mainContainer = document.querySelector('main');
 //clearPage();
 //showPageLogUp();
 //showPageLogIn();
-showPage2Menu();
+//showPage2Menu();
 //showPage3ChoosIndustry();
 //showPage4FillOutTheForm();
-showPage5OutputQuestion();
+//showPage5OutputQuestion();
 //showPage6Results();
 
 //определение функций
@@ -218,18 +218,17 @@ function showPageLogIn(){
         showPageLogUp();
     });
 }
+
+//если нажали на "Отобрать ценную бумагу"
+const selectSecurity = document.getElementById('to-select-a-security');
+selectSecurity.addEventListener('click', function() {
+    clearPage();
+    showPage3ChoosIndustry();
+});
+
 //выводим страницу 2 - главное меню
 function showPage2Menu(){
-    mainContainer.innerHTML = `
-    <div id="page2" class="window-with-info-about-page">
-        <h2 class="info-on-the-page">МЕНЮ</h2>
-        <button class="buttons" id="to-select-a-security">Отобрать ценную бумагу</button>
-        <button class="buttons" id="papers-that-passed-survey">Бумаги прошедшие опрос</button>
-        <button class="buttons" id="database-of-questions">вопросы</button>
-        <button class="buttons" id="database-of-multipliers">мультипликаторы</button>
-        <button class="buttons" id="backToStart">Выйти из приложения</button>
-    </div>
-    `;
+   
 
     //если нажали на "Отобрать ценную бумагу"
     const selectSecurity = document.getElementById('to-select-a-security');
@@ -292,8 +291,9 @@ function showPage3ChoosIndustry(){
     //если нажали на "Назад"
     const backInMenu = document.getElementById('back-in-menu');
     backInMenu.addEventListener('click', function() {
-        clearPage();
-        showPage2Menu();
+        // clearPage();
+        // showPage2Menu();
+        document.location='index.html'
     });
 }
 
@@ -461,8 +461,9 @@ function showPage6Results(){
         securitiesKind = ''; // вид ценной бумаги
         securitiesCoast = ''; // стоимость бумаги
 
-        clearPage();
-        showPage2Menu(); 
+        // clearPage();
+        // showPage2Menu();
+        document.location='index.html'
     });
 }
 
