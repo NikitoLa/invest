@@ -12,6 +12,7 @@ main {
     align-content: center;
     background-color: rgb(229, 243, 246);
     min-height: 80vh;
+    
 }
 
 footer {
@@ -47,13 +48,29 @@ span {
 }
 
 table {
-    font-size: 13px;
-    margin: 0px auto;
+    font-size: 14px;
+    margin: 20px auto;
 
     align-content: center;
     text-align:center;
-
 }
+
+th {
+    border: 1px solid black;
+    height: 50px;
+    width: 100px;
+
+    background-color: rgb(42, 46, 110);
+    color: white;
+}
+
+td {
+    border: 1px solid rgb(133, 136, 241);;
+    height: 50px;
+    width: 100px;
+}
+
+
 
 .window-with-info-about-page {
     border: 2px solid rgb(210, 230, 235);
@@ -61,10 +78,11 @@ table {
     
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    /* margin: 5px auto; */
+    margin: 5px auto;
     
     min-height: 200px;
-    /* width: auto; */
+
+    max-width: fit-content;
 }
 
 .info-on-the-page {

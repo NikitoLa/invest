@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InvestApp</title>
-    <link rel="stylesheet" href={% static "deps/css/styleForAssets.css" %}>
-      
+    <link rel="stylesheet" href={% static "deps/css/styleForAssets.css" %}>    
+    <!-- <link rel="stylesheet" href="styleForAssets.css">     -->
 
 </head>
 <body>
@@ -23,7 +23,7 @@
             <h2 class="info-on-the-page">Бумаги прошедшие опрос</h2>
 
             <section>
-                <table border="2">
+                <table>
                     <tr>
                         <th>{{content}}</th>
                         <th>Возраст компании</th>
@@ -35,14 +35,14 @@
                         <th>EV/EBITDA</th>
                         <th>ROE</th>
                         <th>ROA</th>
-                        <th>Абсолютная разница ROE и ROA</th>
+                        <th>|ROE - ROA|</th>
                         <th>gross margin</th>
                         <th>NCAV</th>
                         <th>Измен. цены за год (%)</th>
                     </tr>
                     {% for asset in assets %}
                         <tr>
-                            <td>{{asset.asset}}</td>
+                            <th>{{asset.asset}}</th>
                             <td>{{asset.age}}</td>
                             <td>{{asset.d_div_e}}</td>
                             <td>{{asset.eps}}</td>
@@ -57,7 +57,7 @@
                             <td>{{asset.ncav}}</td>
                             <td>{{asset.asset_diff}}</td>
                         </tr>
-                    {% endfor %}
+                    {% endfor %}                    
                 </table>
             </section>
 

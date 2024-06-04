@@ -47,9 +47,15 @@ span {
 }
 
 table {
-    font-size: 13px;
-    margin: 0px auto;
+    font-size: 14px;
+    /* margin: 20px auto; */
+    align-content: center;
+    width: 100%;
+}
 
+td {
+    border: 1px solid rgb(133, 136, 241);;
+    height: 50px;
 }
 
 .window-with-info-about-page {
